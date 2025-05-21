@@ -130,7 +130,8 @@ function bataille() {
         let attaqueOrdi = choixAttaqueOrdi(); //ordi avec attque aléatoire (regarder randomize là haut)
         attaquer(ordinateur, joueur, attaques[attaqueOrdi]); // ordi attaque joueur
 
-        if (victoire()) break;
+        if (victoire()) break; //deux fois if victoire : un pour vérifier la victoire de l'ordi et continuer pou pas/ 
+        // l'autre pour vérifier la victoire du joueur et continuer ou pas
     }
 }
 bataille()
